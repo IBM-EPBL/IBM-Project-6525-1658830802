@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .navmo{
+  float:left;
+  color:#ffff00;
+  font-size:2rem;
+}
+body {
+  background-image: url('../static/bg3.jpg');
+  background-size: 100%;
+}
+.center {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#000000;
+      }
+      
+      li {
+        float: right;
+      }
+      
+      li a {
+        display: block;
+        color:#ffff00;
+        text-align: center;
+        padding: 1.5rem 16px;
+        text-decoration: none;
+      }
+      .text h1{
+      color:#1206cc;
+      }
+li a:hover {
+           color:#fff;
+           }
+           .button {
+  background-color: hotpink;
+  border: 10px;
+  color: #1206cc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 18px;
+}
+           
+</style>
+<div>
+    <nav>
+    <ul>
+      <li><a class="active">Classify</a></li>
+      <li><a href="/">Home</a></li>
+      <p class="navmo">Nutrition image analysis</p>
+    </ul>
+    </nav>
+    </div>
+    <div class="text">
+    <h1>Upload picture</h1>
+    </div>
+    <form action="/action_page.php">
+      <input type="file" id="file" name="file">
+      <a href="/button">submit</a>
+    </form>
+</head>
+</html>
