@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .navmo{
+  float:left;
+  color: #ffff00;
+  font-size:2rem;
+}
+body {
+  background-image: url('../static/bg3.jpg');
+  background-size: 100%;
+}
+.center {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#000000;
+      }
+       .text{
+       color:#ffff00;
+       }
+       .text a:hover{
+       color:#fff;
+       }
+
+      
+      li {
+        float: right;
+      }
+      
+      li a {
+        display: block;
+        color: #ffff00;
+        text-align: center;
+        padding: 1.5rem 16px;
+        text-decoration: none;
+      }
+li a:hover {
+            color: #fff;
+           }
+      .title {
+      color:#1206cc;
+      padding-left:28rem;
+      }
+
+</style>
+<div>
+    <nav>
+    <ul>
+      <li><a class="active">Classify</a></li>
+       <div class="text">
+      <li><a href="/">Home</a></li>
+        </div>
+      <p class="navmo">Nutrition image analysis</p>
+    </ul>
+    </nav>
+    </div>
+    <div class="title">
+  <h1>Picture is classified as {{result}} </h1>
+    </div>
+        <div class="center">
+  <p id="demo"></p>
+
+  <script>
+  switch (result) {
+    case "APPLES":
+      document.write('Calories: 52 Water: 86% Protein: 0.3 grams Carbs: 13.8 grams Sugar: 10.4 grams Fiber: 2.4 grams Fat: 0.2 grams')
+      break;
+    case "BANANA":
+      document.write('110 calories, 0 gram fat, 1 gram protein, 28 grams carbohydrate, 15 grams sugar (naturally occurring), 3 grams fiber, and 450 mg potassium.')
+      break;
+    case "ORANGE":
+     document.write('60 calories,No fat or sodium.,3 grams of fiber.,12 grams of sugar.,1 gram of protein.,14 micrograms of vitamin A.,70 milligrams of vitamin C.')
+      break;
+    case "PINEAPPLE":
+     document.write('Calories: 83; Fat: 1.7 grams; Protein: 1 gram; Carbs: 21.6 grams; Fiber: 2.3 grams')
+      break;
+    case "WATERMELON":
+    document.write('Calories: 46 · Total fat: 0.2 gram (g) · Carbohydrates: 12 g · Dietary fiber: 0.6 g · Protein: 1 g · Sugars: 9.4 g · Water content: 139 g')
+      break;
+  }
+  document.getElementById("demo").innerHTML = "Fruit is classified as " + result;
+  </script>
+
+</p>
+</div>
+</head>
+</html>
